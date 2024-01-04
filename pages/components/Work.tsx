@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "./Layout/Layout";
 
 function Work() {
@@ -34,9 +35,11 @@ function Work() {
               </div>
             </div>
             <div className="w-[400px] h-[400px] inline-block">
-              <img
+              <Image
                 src="/works_image_one.png"
                 alt="works_image_one"
+                width={400}
+                height={400}
                 className="rounded-3xl"
               />
             </div>
@@ -58,9 +61,11 @@ function Work() {
               </div>
             </div>
             <div className="w-[400px] h-[400px] inline-block order-2 lg:order-1">
-              <img
+              <Image
                 src="/works_image_two.png"
                 alt="works_image_one"
+                width={400}
+                height={400}
                 className="rounded-3xl"
               />
             </div>
@@ -82,38 +87,50 @@ function Work() {
               </div>
             </div>
             <div className="w-[400px] h-[400px] inline-block">
-              <img
+              <Image
                 src="/works_image_three.png"
                 alt="works_image_three"
+                width={400}
+                height={400}
                 className="rounded-3xl"
               />
             </div>
           </div>
         </div>
       </Layout>
-      <img
+      <Image
         src="/works_icon_one.png"
         alt="works_icon_one"
+        width={92}
+        height={149}
         className="absolute top-[100px] right-[183px] hidden 2xl:block"
       />
-      <img
+      <Image
         src="/works_icon_two.png"
         alt="works_icon_two"
+        width={124}
+        height={187}
         className="absolute top-[40%] right-0 hidden 2xl:block"
       />
-      <img
+      <Image
         src="/works_icon_three.png"
         alt="works_icon_three"
+        width={109}
+        height={185}
         className="absolute bottom-[70px] right-0 hidden 2xl:block"
       />
-      <img
+      <Image
         src="/works_icon_four.png"
         alt="works_icon_four"
+        width={34}
+        height={123}
         className="absolute top-[350px] left-[150px] hidden 2xl:block"
       />
-      <img
+      <Image
         src="/works_icon_five.png"
         alt="works_icon_five"
+        width={115}
+        height={305}
         className="absolute bottom-[200px] left-0 hidden 2xl:block"
       />
     </div>

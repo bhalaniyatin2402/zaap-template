@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "./Layout/Layout";
 
 function Report() {
@@ -6,9 +7,11 @@ function Report() {
       <Layout>
         <div className="relative flex flex-col lg:flex-row justify-center items-center gap-[30px] lg:gap-[140px] bg-[#027F61] rounded-3xl py-[50px]">
           <div className="left">
-            <img
+            <Image
               src="/report_image.png"
-              alt=""
+              alt="report_image"
+              width={350}
+              height={350}
               className="w-[350px] h-[350px]"
             />
           </div>
@@ -23,16 +26,20 @@ function Report() {
               Get Started
             </button>
           </div>
-          <img
+          <Image
             src="/report_image_three.png"
             alt="report_image_three"
+            width={64}
+            height={89}
             className="absolute bottom-[70px] right-[70px] hidden 2xl:block"
           />
         </div>
       </Layout>
-      <img
+      <Image
         src="/report_image_two.png"
         alt="report_image_two"
+        width={68}
+        height={71}
         className="absolute bottom-[20px] left-[100px] hidden 2xl:block"
       />
     </div>

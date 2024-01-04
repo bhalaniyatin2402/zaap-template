@@ -2,6 +2,7 @@ import Layout from "./Layout/Layout";
 
 import reportIconList from "./../data/reportBtnList.json";
 import supporIconList from "./../data/supportBtnList.json";
+import Image from "next/image";
 
 function Support() {
   return (
@@ -16,9 +17,11 @@ function Support() {
             <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
               {reportIconList.map((icon) => (
                 <div className="w-[265px] flex justify-start items-center gap-[15px]">
-                  <img
+                  <Image
                     src={icon.src}
                     alt={icon.name}
+                    width={40}
+                    height={40}
                     className="w-[40px] h-[40px]"
                   />
                   <p className="text-[18px] lg:text-24px font-semibold">
@@ -36,9 +39,11 @@ function Support() {
               <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
                 {supporIconList.map((icon) => (
                   <div className="w-[265px] flex justify-start items-center gap-[15px]">
-                    <img
+                    <Image
                       src={icon.src}
                       alt={icon.name}
+                      width={40}
+                      height={40}
                       className="w-[40px] h-[40px]"
                     />
                     <p className="text-[18px] lg:text-24px font-semibold text-white">
@@ -51,14 +56,18 @@ function Support() {
           </div>
         </div>
       </Layout>
-      <img
+      <Image
         src="/support_icn_one.png"
         alt="support_icn_one"
+        width={108}
+        height={96}
         className="absolute top-[20px] right-0 hidden 2xl:block"
       />
-      <img
+      <Image
         src="/support_icn_two.png"
         alt="support_icn_two"
+        width={83}
+        height={216}
         className="absolute bottom-[20px] left-0 hidden 2xl:block"
       />
     </div>

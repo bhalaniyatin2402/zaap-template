@@ -1,6 +1,7 @@
 import Layout from "./Layout/Layout";
 
 import analysisBtnList from "./../data/analysisBtnList.json";
+import Image from "next/image";
 
 function Modules() {
   return (
@@ -26,19 +27,25 @@ function Modules() {
             ))}
           </div>
         </div>
-        <img
+        <Image
           src="/module_image_one.png"
           alt="module_image_one"
+          width={146}
+          height={146}
           className="absolute top-[200px] left-[100px] hidden 2xl:block"
         />
-        <img
+        <Image
           src="/module_image_two.png"
           alt="module_image_two"
+          width={68}
+          height={71}
           className="absolute top-[240px] right-[100px] hidden 2xl:block"
         />
-        <img
+        <Image
           src="/module_image_three.png"
           alt="module_image_three"
+          width={142}
+          height={149}
           className="absolute top-[60%] left-0 hidden 2xl:block"
         />
       </Layout>

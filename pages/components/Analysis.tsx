@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import Layout from "./Layout/Layout";
+import Image from "next/image";
 
 interface AnalysisCardType {
   analysisCardImage: string;
@@ -60,21 +60,30 @@ export default function Analysis() {
           </div>
         </div>
       </Layout>
-      <img
+      <Image
         src="/analysis_icn_one.png"
         alt="analysis_icn_one"
+        width={92}
+        height={76}
         className="absolute top-[170px] right-[100px] hidden 2xl:block"
       />
-      <img
-        src="/analysis_icn_two.png"
+      ;
+      <Image
+        src="/analysis_icn_one.png"
         alt="analysis_icn_two"
+        width={96}
+        height={123}
         className="absolute top-[150px] left-[100px] hidden 2xl:block"
       />
-      <img
+      ;
+      <Image
         src="/analysis_icn_three.png"
         alt="analysis_icn_three"
+        width={129}
+        height={234}
         className="absolute bottom-[100px] left-0 hidden 2xl:block"
       />
+      ;
     </div>
   );
 }
@@ -93,15 +102,17 @@ function AnalyisCard({
         className={`rounded-13xl bg-gray shadow-[20px_32px_66px_rgba(0,_0,_0,_0.06)] w-[306px] overflow-hidden flex flex-col items-center justify-start box-border relative p-8`}
       >
         <div className="absolute my-0 mx-[!important] rounded-[50%] bg-floralwhite w-[88.6px] h-[88.6px] z-[0]" />
-        <img
-          className="relative w-[90px] h-[90px] overflow-hidden shrink-0 object-cover z-[1] mb-8"
-          alt=""
+        <Image
           src={analysisCardImage}
+          alt={analysisCardTitle}
+          width={90}
+          height={90}
+          className="relative w-[90px] h-[90px] overflow-hidden shrink-0 object-cover z-[1] mb-8"
         />
         <h2 className="relative font-semibold inline-block text-[24px] lg:w-[80%] mb-[12px]">
           {analysisCardTitle}
         </h2>
-        <p className="relative text-base font-medium text-dimgray text-[16px]">
+        <p className="relative text-base font-medium text-[16px]">
           {analysisCardDescription}
         </p>
       </div>
