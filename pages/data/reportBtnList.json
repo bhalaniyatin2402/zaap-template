@@ -1,0 +1,26 @@
+[
+  {
+    "src": "/report_icon_one.png",
+    "name": "Executive summary"
+  },
+  { 
+    "src": "/report_icon_two.png",
+    "name": "Key findings"
+  },
+  {
+    "src": "/report_icon_three.png",
+    "name": "Strengths & weaknesses"
+  },
+  {
+    "src": "/report_icon_four.png",
+    "name": "Growth Opportunities"
+  },
+  {
+    "src": "/report_icon_five.png",
+    "name": "Questions for Seller"
+  },
+  {
+    "src": "/report_icon_six.png",
+    "name": "Red flags"
+  }
+]

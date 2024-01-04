@@ -1,0 +1,32 @@
+[
+  {
+    "img": "/experts_image_one.png",
+    "title": "Trend Analysis",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  },
+  {
+    "img": "/experts_image_two.png",
+    "title": "Digital Marketing",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  },
+  {
+    "img": "/experts_image_three.png",
+    "title": "Acquisition Strategy",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  },
+  {
+    "img": "/experts_image_four.png",
+    "title": "Data Analysis",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  },
+  {
+    "img": "/experts_image_five.png",
+    "title": "Risk Management",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  },
+  {
+    "img": "/experts_image_six.png",
+    "title": "Market Research",
+    "description": "Leverage our marketing expertise for detailed campaign audits, providing clear insights for informed investments."
+  }
+]
