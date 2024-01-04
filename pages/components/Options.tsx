@@ -1,23 +1,26 @@
+import Image from "next/image";
 import Layout from "./Layout/Layout";
 
 export default function Options() {
   return (
-    <div className="">
+    <div className="relative py-[35px] xl:py-[100px]">
       <Layout>
         <div className="">
           <div className="p-3">
             <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
               Reporting
-              <span className="ms-1 text-[#027F61]">Options</span>
+              <span className="ms-1 text-[#027F61]"> Options</span>
             </h2>
           </div>
-          <div className="cards flex justify-center items-center gap-[24px] border border-red-300">
-            <div className="relative w-[416px] h-[880px] p-10 rounded-2xl border border-green-800">
-              <h2 className="text-[24px] font-semibold pb-[32px] border-b-2 border-gray-300">
+          <div className="cards flex flex-wrap justify-center items-center gap-[24px] px-3">
+            <div className="relative w-[400px] h-[770px] lg:h-[880px] p-10 rounded-2xl border-green-800 box-shadow">
+              <h2 className="text-[24px] font-semibold pb-[20px] xl:pb-[32px] border-b-2 border-gray-300">
                 Standard Package
               </h2>
-              <p className="text-[32px] font-semibold py-[32px]">$1995</p>
-              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-3">
+              <p className="text-[32px] font-semibold py-[20px] xl:py-[32px]">
+                $1995
+              </p>
+              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-3 font-medium">
                 <li className="">
                   In-depth analysis of website traffic patterns
                 </li>
@@ -49,12 +52,14 @@ export default function Options() {
                 Select Plan
               </button>
             </div>
-            <div className="relative w-[416px] h-[880px] p-10 rounded-2xl bg-[#027F61] text-white border border-green-800">
-              <h2 className="text-[24px] font-semibold pb-[32px] border-b-2 border-gray-200">
+            <div className="relative w-[400px] h-[770px] lg:h-[880px] p-10 rounded-2xl bg-[#027F61] text-white box-shadow">
+              <h2 className="text-[24px] font-semibold pb-[20px] xl:pb-[32px] border-b-2 border-gray-200">
                 Premium Package
               </h2>
-              <p className="text-[32px] font-semibold py-[32px]">$2995</p>
-              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-3">
+              <p className="text-[32px] font-semibold py-[20px] xl:py-[32px]">
+                $2995
+              </p>
+              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-2 xl:gap-3 font-medium">
                 <li className="">
                   In-depth analysis of website traffic patterns
                 </li>
@@ -83,16 +88,18 @@ export default function Options() {
                 <li className="">Available in in 5-7 business days</li>
                 <li className="">30 minute Q&A call</li>
               </ul>
-              <button className="lg:h-[56px] px-[12px] absolute bottom-[40px] left-[50%] -translate-x-[50%] py-[4px] lg:px-[32px] lg:py-[16px] text-[#027F61] bg-[#FFFFFF] rounded-lg font-bold border">
+              <button className="lg:h-[56px] w-[190px] px-[12px] absolute bottom-[40px] left-[50%] -translate-x-[50%] py-[4px] lg:px-[32px] lg:py-[16px] text-[#027F61] bg-[#FFFFFF] rounded-lg font-bold border">
                 Get Your Report
               </button>
             </div>
-            <div className="relative w-[416px] h-[880px] p-10 rounded-2xl border border-green-800">
-              <h2 className="text-[24px] font-semibold pb-[32px] border-b-2 border-gray-300">
+            <div className="relative w-[400px] h-[770px] lg:h-[880px] p-10 rounded-2xl box-shadow">
+              <h2 className="text-[24px] font-semibold pb-[20px] xl:pb-[32px] border-b-2 border-gray-300">
                 Platinum Package
               </h2>
-              <p className="text-[32px] font-semibold py-[32px]">$599</p>
-              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-3">
+              <p className="text-[32px] font-semibold py-[20px] xl:py-[32px]">
+                $599
+              </p>
+              <ul className="list-disc list-outside flex flex-col justify-center items-start gap-3 font-medium">
                 <li className="">42 Hosted in 22 locations</li>
                 <li className="">99.5% Guaranteed Global</li>
                 <li className="">30/5 Email, Chat Support</li>
@@ -109,6 +116,13 @@ export default function Options() {
           </div>
         </div>
       </Layout>
+      <Image
+        src="/option_image_one.png"
+        alt="option_image_one"
+        width={170}
+        height={85}
+        className="absolute bottom-[170px] right-0 hidden 2xl:block"
+      />
     </div>
   );
 }

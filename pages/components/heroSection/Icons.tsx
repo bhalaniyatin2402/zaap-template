@@ -22,7 +22,7 @@ export default function Icons() {
         alt="vector image"
         width={178}
         height={49}
-        className="absolute top-[700px] left-[50%] -z-10 hidden xl:block"
+        className="absolute top-[630px] left-[45%] -z-10 hidden xl:block"
       />
       <Image
         src="/Group.png"

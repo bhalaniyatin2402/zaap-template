@@ -23,7 +23,7 @@ export default function Home() {
       <Support />
       <Work />
       <Experts />
-      {/* <Options /> */}
+      <Options />
     </div>
   );
 }
