@@ -16,7 +16,7 @@ function Support() {
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
               {reportIconList.map((icon) => (
-                <div className="w-[265px] flex justify-start items-center gap-[15px]">
+                <div className="w-[265px] flex justify-start items-center gap-[15px]" key={icon.name}>
                   <Image
                     src={icon.src}
                     alt={icon.name}
@@ -38,7 +38,7 @@ function Support() {
               </h2>
               <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
                 {supporIconList.map((icon) => (
-                  <div className="w-[265px] flex justify-start items-center gap-[15px]">
+                  <div className="w-[265px] flex justify-start items-center gap-[15px]" key={icon.name}>
                     <Image
                       src={icon.src}
                       alt={icon.name}

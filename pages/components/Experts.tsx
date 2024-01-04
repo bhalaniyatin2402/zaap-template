@@ -24,7 +24,7 @@ function Experts() {
           </div>
           <div className="bottom flex flex-wrap justify-center items-start gap-[24px]">
             {expertCardContent.map((content) => (
-              <div className="flex-wrap flex flex-col justify-center items-start w-[360px] border p-4">
+              <div className="flex-wrap flex flex-col justify-center items-start w-[360px] border p-4" key={content.title}>
                 <Image
                   src={content.img}
                   alt={content.title}

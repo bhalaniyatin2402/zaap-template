@@ -21,7 +21,10 @@ function Modules() {
           </div>
           <div className="flex flex-wrap gap-[24px] justify-center">
             {analysisBtnList.map((btnName) => (
-              <button className="text-[16px] lg:text-[24px] text-[#027F61] px-[6px] py-[8px] lg:px-[20px] lg:py-[24px] w-[250px] h-[50px] lg:w-[394px] lg:h-[84px] font-semibold border">
+              <button
+                className="text-[16px] lg:text-[24px] text-[#027F61] px-[6px] py-[8px] lg:px-[20px] lg:py-[24px] w-[250px] h-[50px] lg:w-[394px] lg:h-[84px] font-semibold border"
+                key={btnName}
+              >
                 {btnName}
               </button>
             ))}

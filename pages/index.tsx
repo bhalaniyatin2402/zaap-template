@@ -10,6 +10,8 @@ import Report from "./components/Report";
 import Support from "./components/Support";
 import Work from "./components/Work";
 import Experts from "./components/Experts";
+import Options from "./components/Options";
+
 export default function Home() {
   return (
     <div>
@@ -21,6 +23,7 @@ export default function Home() {
       <Support />
       <Work />
       <Experts />
+      {/* <Options /> */}
     </div>
   );
 }
