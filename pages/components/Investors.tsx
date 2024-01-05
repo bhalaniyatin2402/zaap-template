@@ -1,7 +1,11 @@
 import Image from "next/image";
+import { useState } from "react";
+
 import Layout from "./Layout/Layout";
 
 export default function Invesotors() {
+  const [carouselState, setCarouselState] = useState<number>(0);
+
   return (
     <div className="w-[100%] bg-[#FBF7EC] relative px-4 flex justify-center items-center">
       <Layout>
@@ -9,7 +13,17 @@ export default function Invesotors() {
           <div className="p-3">
             <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
               Trusted by
-              <span className="ms-1 text-[#027F61]"> Investors</span>
+              <span className="relative ms-1 text-[#027F61]">
+                {" "}
+                Investors
+                <Image
+                  src="/modules_bottom_border.png"
+                  alt="bottom_border"
+                  width={200}
+                  height={5}
+                  className="absolute left-0 ms-1"
+                />
+              </span>
             </h2>
           </div>
           <div className="carousel">

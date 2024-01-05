@@ -12,7 +12,17 @@ function Experts() {
             <div className="p-3">
               <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
                 We Are Experts In
-                <span className="ms-1 text-[#027F61]">These Areas</span>
+                <span className="relative ms-1 text-[#027F61]">
+                  {" "}
+                  These Areas
+                  <Image
+                    src="/analysis_bottom_border.png"
+                    alt="bottom_border"
+                    width={0}
+                    height={0}
+                    className="absolute w-[100%] left-2 h-[6px] lg:h-[10px]"
+                  />
+                </span>
               </h2>
               <p className="relative m-0 w-[100%] px-5 text-[14px] md:text-[16px] xl:text-[18px] font-medium text-center">
                 We transform the daunting task of due diligence into a journey
@@ -24,7 +34,10 @@ function Experts() {
           </div>
           <div className="bottom flex flex-wrap justify-center items-start gap-[24px]">
             {expertCardContent.map((content) => (
-              <div className="flex-wrap flex flex-col justify-center items-start w-[360px] border p-4" key={content.title}>
+              <div
+                className="flex-wrap flex flex-col justify-center items-start w-[360px] border p-4"
+                key={content.title}
+              >
                 <Image
                   src={content.img}
                   alt={content.title}

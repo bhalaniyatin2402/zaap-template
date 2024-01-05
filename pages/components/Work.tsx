@@ -9,7 +9,17 @@ function Work() {
           <div className="p-3">
             <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
               How It
-              <span className="ms-1 text-[#027F61]">Works</span>
+              <span className="relative ms-1 text-[#027F61]">
+                {" "}
+                Works
+                <Image
+                  src="/modules_bottom_border.png"
+                  alt="bottom_border"
+                  width={220}
+                  height={5}
+                  className="absolute left-0 -bottom-2 w-[100%] h-[7px] lg:h-[10px]"
+                />
+              </span>
             </h2>
             <p className="relative m-0 w-[100%] px-5 text-[14px] md:text-[16px] xl:text-[18px] font-medium text-center">
               We transform the daunting task of due diligence into a journey of

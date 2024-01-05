@@ -18,8 +18,15 @@ export default function Analysis() {
               <span className="text-[20px] md:text-[25px] xl:text-[48px] w-[100%] font-semibold">
                 Find Clarity and Confidence in Our Comprehensive.
               </span>
-              <span className="text-seagreen text-[#027F61] text-[20px] md:text-[25px] xl:text-[48px] font-semibold">
+              <span className="relative text-[#027F61] text-[20px] md:text-[25px] xl:text-[48px] font-semibold">
                 Investment Analysis
+                <Image
+                  src="/bottom_border.png"
+                  alt="bottom_border"
+                  width={0}
+                  height={0}
+                  className="absolute w-[100%] h-[10px] left-0"
+                />
               </span>
             </h2>
             <p className="relative m-0 w-[80%] text-[14px] md:text-[16px] xl:text-[18px] leading-4 lg:leading-5 font-medium">
@@ -96,7 +103,7 @@ function AnalyisCard({
 }: AnalysisCardType) {
   return (
     <div
-      className={`${classname} flex flex-col justify-center items-center px-0 pb-0 h-[366px]`}
+      className={`${classname} relative flex flex-col justify-center items-center px-0 pb-0 h-[366px]`}
     >
       <div
         className={`rounded-13xl bg-gray shadow-[20px_32px_66px_rgba(0,_0,_0,_0.06)] w-[306px] overflow-hidden flex flex-col items-center justify-start box-border relative p-8`}
@@ -116,6 +123,20 @@ function AnalyisCard({
           {analysisCardDescription}
         </p>
       </div>
+      <Image
+        src="/anaysis_card_bg.png"
+        alt="analysis_card_image"
+        width={43}
+        height={89}
+        className="absolute right-0 top-[50%] -translate-y-[50%]"
+      />
+      <Image
+        src="/anaysis_card_bg.png"
+        alt="analysis_card_image"
+        width={43}
+        height={89}
+        className="absolute left-0 top-[50%] -translate-y-[50%] rotate-180"
+      />
     </div>
   );
 }

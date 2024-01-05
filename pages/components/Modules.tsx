@@ -1,7 +1,7 @@
-import Layout from "./Layout/Layout";
-
-import analysisBtnList from "./../data/analysisBtnList.json";
 import Image from "next/image";
+
+import Layout from "./Layout/Layout";
+import analysisBtnList from "./../data/analysisBtnList.json";
 
 function Modules() {
   return (
@@ -11,7 +11,16 @@ function Modules() {
           <div className="p-3">
             <h2 className="text-[20px] md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
               Due Diligence
-              <span className="ms-1 text-[#027F61]">Modules</span>
+              <span className="relative ms-1 text-[#027F61]">
+                Modules
+                <Image
+                  src="/modules_bottom_border.png"
+                  alt="bottom_border"
+                  width={200}
+                  height={5}
+                  className="absolute left-0"
+                />
+              </span>
             </h2>
             <p className="relative m-0 w-[100%] px-5 text-[14px] md:text-[16px] xl:text-[18px] font-medium">
               Lorem Ipsum is simply dummy text of the printing and typesetting

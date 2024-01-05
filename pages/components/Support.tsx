@@ -12,11 +12,24 @@ function Support() {
           <div className="max-w-[750px] px-[15px] py-[20px]  lg:py-[52px] lg:px-[36px]">
             <h2 className="text-center lg:text-left text-[25px] xl:text-[42px] font-semibold mb-[15px] lg:mb-[25px]">
               Report
-              <span className="text-[#29463f]"> Sections</span>
+              <span className="relative text-[#027F61]">
+                {" "}
+                Sections
+                <Image
+                  src="/modules_bottom_border.png"
+                  alt="bottom_border"
+                  width={220}
+                  height={5}
+                  className="absolute left-[10px] -bottom-2 lg:-bottom-2 w-[90%] h-[8px] lg:h-[10px]"
+                />
+              </span>
             </h2>
             <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
               {reportIconList.map((icon) => (
-                <div className="w-[265px] flex justify-start items-center gap-[15px]" key={icon.name}>
+                <div
+                  className="w-[265px] flex justify-start items-center gap-[15px]"
+                  key={icon.name}
+                >
                   <Image
                     src={icon.src}
                     alt={icon.name}
@@ -34,11 +47,24 @@ function Support() {
           <div className="max-w-[470px]">
             <div className="bg-[#027F61]  px-[15px] py-[20px] lg:py-[52px] lg:px-[36px] rounded-2xl">
               <h2 className="text-center lg:text-left text-[25px] xl:text-[42px] font-semibold mb-[15px] lg:mb-[25px] text-white">
-                Included Support
+                Included {" "}
+                <span className="relative text-white">
+                   Supports
+                  <Image
+                    src="/supports_bottom_border.png"
+                    alt="bottom_border"
+                    width={220}
+                    height={5}
+                    className="absolute left-0 -bottom-3 w-[100%] h-[8px] lg:h-[10px]"
+                  />
+                </span>
               </h2>
               <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
                 {supporIconList.map((icon) => (
-                  <div className="w-[265px] flex justify-start items-center gap-[15px]" key={icon.name}>
+                  <div
+                    className="w-[265px] flex justify-start items-center gap-[15px]"
+                    key={icon.name}
+                  >
                     <Image
                       src={icon.src}
                       alt={icon.name}

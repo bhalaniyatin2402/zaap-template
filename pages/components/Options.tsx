@@ -9,7 +9,17 @@ export default function Options() {
           <div className="p-3">
             <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[72px] relative capitalize font-semibold z-[0]">
               Reporting
-              <span className="ms-1 text-[#027F61]"> Options</span>
+              <span className="relative ms-1 text-[#027F61]">
+                {" "}
+                Options
+                <Image
+                  src="/modules_bottom_border.png"
+                  alt="bottom_border"
+                  width={200}
+                  height={5}
+                  className="absolute left-0 ms-2"
+                />
+              </span>
             </h2>
           </div>
           <div className="cards flex flex-wrap justify-center items-center gap-[24px] px-3">
