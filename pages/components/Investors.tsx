@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Layout from "./Layout/Layout";
+import { useState } from "react";
 
 export default function Invesotors() {
+  const [carouselState, setCarouselState] = useState<number>(1)
+  
   return (
     <div className="w-[100%] bg-[#FBF7EC] relative px-4 flex justify-center items-center">
       <Layout>

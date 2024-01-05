@@ -24,7 +24,7 @@ function Support() {
                 />
               </span>
             </h2>
-            <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
+            <div className="flex flex-wrap justify-start items-center gap-[15px] lg:gap-[60px]">
               {reportIconList.map((icon) => (
                 <div
                   className="w-[265px] flex justify-start items-center gap-[15px]"
@@ -59,7 +59,7 @@ function Support() {
                   />
                 </span>
               </h2>
-              <div className="flex flex-wrap justify-center items-center gap-[15px] lg:gap-[60px]">
+              <div className="flex flex-wrap justify-start items-center gap-[15px] lg:gap-[60px]">
                 {supporIconList.map((icon) => (
                   <div
                     className="w-[265px] flex justify-start items-center gap-[15px]"

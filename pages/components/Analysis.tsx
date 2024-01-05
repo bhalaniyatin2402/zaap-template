@@ -25,7 +25,7 @@ export default function Analysis() {
                   alt="bottom_border"
                   width={0}
                   height={0}
-                  className="absolute w-[100%] h-[10px] left-0"
+                  className="absolute w-[100%] h-[15px] left-0"
                 />
               </span>
             </h2>

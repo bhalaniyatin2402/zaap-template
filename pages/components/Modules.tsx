@@ -9,7 +9,7 @@ function Modules() {
       <Layout>
         <div className="flex flex-col items-center justify-center relative gap-[30px] xl:gap-[80px] z-[3] text-center">
           <div className="p-3">
-            <h2 className="text-[20px] md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
+            <h2 className="text-[20px] md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize z-[0] font-semibold">
               Due Diligence
               <span className="relative ms-1 text-[#027F61]">
                 Modules
@@ -28,14 +28,14 @@ function Modules() {
               ever since the 1500s,
             </p>
           </div>
-          <div className="flex flex-wrap gap-[24px] justify-center">
+          <div className="flex flex-wrap gap-[12px] lg:gap-x-12 lg:gap-y-12 justify-center overflow-hidden">
             {analysisBtnList.map((btnName) => (
-              <button
-                className="text-[16px] lg:text-[24px] text-[#027F61] px-[6px] py-[8px] lg:px-[20px] lg:py-[24px] w-[250px] h-[50px] lg:w-[394px] lg:h-[84px] font-semibold border"
-                key={btnName}
-              >
-                {btnName}
-              </button>
+                <button
+                  className="relative text-[16px] lg:text-[24px] text-[#027F61] px-[6px] py-[8px] lg:px-[20px] lg:py-[24px] w-[250px] h-[50px] lg:w-[394px] lg:h-[84px] border font-semibold"
+                  key={btnName}
+                >
+                  {btnName}
+                </button>
             ))}
           </div>
         </div>
