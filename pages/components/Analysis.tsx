@@ -21,11 +21,11 @@ export default function Analysis() {
               <span className="relative text-[#027F61] text-[20px] md:text-[25px] xl:text-[48px] font-semibold">
                 Investment Analysis
                 <Image
-                  src="/bottom_border.png"
+                  src="/modules_bottom_border.png"
                   alt="bottom_border"
-                  width={0}
-                  height={0}
-                  className="absolute w-[100%] h-[9px] left-0"
+                  width={200}
+                  height={5}
+                  className="absolute left-0 w-[100%] h-[9px]"
                 />
               </span>
             </h2>

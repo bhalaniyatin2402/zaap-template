@@ -16,11 +16,11 @@ function Experts() {
                   {" "}
                   These Areas
                   <Image
-                    src="/analysis_bottom_border.png"
+                    src="/modules_bottom_border.png"
                     alt="bottom_border"
-                    width={0}
-                    height={0}
-                    className="absolute w-[100%] left-2 h-[9px] lg:h-[8px]"
+                    width={200}
+                    height={5}
+                    className="absolute left-0 w-[100%] h-[10px]"
                   />
                 </span>
               </h2>
