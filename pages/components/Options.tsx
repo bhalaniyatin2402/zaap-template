@@ -7,7 +7,7 @@ export default function Options() {
       <Layout>
         <div className="">
           <div className="p-3">
-            <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[20px] relative capitalize font-semibold z-[0]">
+            <h2 className="text-[20px] text-center md:text-[25px] xl:text-[48px] mb-[6px] lg:mb-[72px] relative capitalize font-semibold z-[0]">
               Reporting
               <span className="ms-1 text-[#027F61]"> Options</span>
             </h2>

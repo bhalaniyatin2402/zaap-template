@@ -11,6 +11,8 @@ import Support from "./components/Support";
 import Work from "./components/Work";
 import Experts from "./components/Experts";
 import Options from "./components/Options";
+import Invesotors from "./components/Investors";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
       <Work />
       <Experts />
       <Options />
+      <Invesotors />
+      <Footer />
     </div>
   );
 }
