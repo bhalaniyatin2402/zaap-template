@@ -27,6 +27,7 @@ export default function Invesotors() {
               <div
                 id={`slide${item}`}
                 className="carousel-item relative w-full"
+                key={item}
               >
                 <div className="">
                   <div className="images flex items-center justify-center py-[30px] lg:py-[72px]">
@@ -77,7 +78,7 @@ export default function Invesotors() {
                       {[1, 2, 3].map((num, j) => {
                         if (i === j) {
                           return (
-                            <span className="w-[22px] h-[22px] flex justify-center items-center">
+                            <span className="w-[22px] h-[22px] flex justify-center items-center" key={num}>
                               <a href={`#slide${j + 1}`}>
                                 <Image
                                   src="/investors_circle.png"
@@ -91,7 +92,7 @@ export default function Invesotors() {
                           );
                         } else {
                           return (
-                            <span className="w-[22px] h-[22px] flex justify-center items-center">
+                            <span className="w-[22px] h-[22px] flex justify-center items-center" key={num}>
                               <a href={`#slide${j + 1}`}>
                               <Image
                                 src="/investors_dot.png"
