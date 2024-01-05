@@ -20,7 +20,7 @@ function Experts() {
                     alt="bottom_border"
                     width={0}
                     height={0}
-                    className="absolute w-[100%] left-2 h-[9px] lg:h-[12px]"
+                    className="absolute w-[100%] left-2 h-[9px] lg:h-[8px]"
                   />
                 </span>
               </h2>
