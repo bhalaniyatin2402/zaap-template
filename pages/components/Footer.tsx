@@ -16,7 +16,7 @@ export default function Footer() {
                 form.
               </p>
             </div>
-            <div className="input flex flex-col lg:flex-row justify-center items-center gap-[16px]">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-[16px]">
               <input
                 type="text"
                 placeholder="Email Address"
